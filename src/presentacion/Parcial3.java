@@ -35,9 +35,12 @@ public class Parcial3 extends JFrame {
 		String rojo = panelIzquierdo.getTxtR().getText();
 		String verde = panelIzquierdo.getTxtG().getText();
 		String azul = panelIzquierdo.getTxtB().getText();
+		int red = Integer.parseInt(rojo);
+		int green = Integer.parseInt(verde);
+		int blue = Integer.parseInt(azul);
 		
 		
-		panelBotones = new PanelBotones(rojo, verde, azul);
+		panelBotones = new PanelBotones(red, green, blue);
 		add(panelBotones, BorderLayout.SOUTH);
 	
 		this.setVisible(true);

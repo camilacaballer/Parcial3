@@ -21,7 +21,7 @@ public class PanelBotones extends JPanel implements ActionListener{
 	  
     private static final String CIRCULO = "ver";
 	
-	public PanelBotones(String rojo, String verde, String azul) {
+	public PanelBotones(int rojo, int verde, int azul) {
 		
 		setLayout(new FlowLayout());
     	
@@ -43,6 +43,8 @@ public class PanelBotones extends JPanel implements ActionListener{
 	        {
 	        	
 	        	
+	        	
+	        	
 	          
 	        }
 	        else if( comando.equals( CIRCULO ) )
@@ -58,6 +60,7 @@ public class PanelBotones extends JPanel implements ActionListener{
 	   {
 	        super.paint( g );
 	        Graphics2D g2d = ( Graphics2D )g;	
+	        
 	        
 	        
 	       
