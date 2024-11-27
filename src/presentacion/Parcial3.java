@@ -20,6 +20,7 @@ public class Parcial3 extends JFrame {
 	private PanelBotones panelBotones;
 	
 	public Parcial3() {
+	
 		
 		this.setTitle("Parcial 3");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -35,9 +36,18 @@ public class Parcial3 extends JFrame {
 		String rojo = panelIzquierdo.getTxtR().getText();
 		String verde = panelIzquierdo.getTxtG().getText();
 		String azul = panelIzquierdo.getTxtB().getText();
-		int red = Integer.parseInt(rojo);
-		int green = Integer.parseInt(verde);
-		int blue = Integer.parseInt(azul);
+		
+		int red, green, blue; 
+		
+		try {
+			red = Integer.parseInt(rojo);
+			green = Integer.parseInt(verde);
+			blue = Integer.parseInt(azul);
+		} catch (NumberFormatException e){
+			red = 0;
+			blue = 0;
+			green = 0;
+		}
 		
 		
 		panelBotones = new PanelBotones(red, green, blue);
