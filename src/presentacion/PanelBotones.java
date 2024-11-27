@@ -21,7 +21,7 @@ public class PanelBotones extends JPanel implements ActionListener{
 	  
     private static final String CIRCULO = "ver";
 	
-	public PanelBotones() {
+	public PanelBotones(String rojo, String verde, String azul) {
 		
 		setLayout(new FlowLayout());
     	
